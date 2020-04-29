@@ -13,7 +13,7 @@ class RoomProvider extends Component {
     };
 
     componentDidMount(){
-        let rooms = this.FormatData(items);
+        let rooms = this.formatData(items);
         let featuredRooms = rooms.filter(room => room.featured===true);
         this.setState({
             rooms, 
@@ -32,6 +32,7 @@ class RoomProvider extends Component {
 
             return room;
         })
+        return tempItems;
     }
 
     render() {

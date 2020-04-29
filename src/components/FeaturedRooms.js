@@ -10,7 +10,7 @@ export default class FeaturedRooms extends Component {
 
         return (
             <div>
-                
+                <Loading />
             </div>
         )
     }
